@@ -2,10 +2,10 @@ source "http://rubygems.org"
 
 group :test do
   gem "rake"
-  gem "puppet", ENV['PUPPET_VERSION'] || '~> 3.4.0'
+  gem "puppet", ">= 6.25.1", ENV['PUPPET_VERSION'] || '~> 3.4.0'
   gem "puppet-lint"
   gem "rspec-puppet", :git => 'https://github.com/rodjek/rspec-puppet.git'
-  gem "puppet-syntax"
+  gem "puppet-syntax", ">= 1.1.0"
   gem "puppetlabs_spec_helper"
 end
 
@@ -15,6 +15,6 @@ group :development do
   gem "beaker"
   gem "beaker-rspec"
   gem "vagrant-wrapper"
-  gem "puppet-blacksmith"
+  gem "puppet-blacksmith", ">= 2.0.2"
   gem "guard-rake"
 end
