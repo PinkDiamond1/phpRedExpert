@@ -11,5 +11,5 @@ gem "vagrant-wrapper"
 gem "puppet-syntax"
 
 group :development do
-  gem "puppet-blacksmith"
+  gem "puppet-blacksmith", ">= 2.1.0"
 end
