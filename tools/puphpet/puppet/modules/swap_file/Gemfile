@@ -12,9 +12,9 @@ end
 group :development do
   gem "travis"
   gem "travis-lint"
-  gem "beaker"
-  gem "beaker-rspec"
+  gem "beaker", ">= 3.20.0"
+  gem "beaker-rspec", ">= 8.0.0"
   gem "vagrant-wrapper"
-  gem "puppet-blacksmith"
+  gem "puppet-blacksmith", ">= 3.0.0"
   gem "guard-rake"
 end
